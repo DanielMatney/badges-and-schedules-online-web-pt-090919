@@ -24,6 +24,13 @@ def assign_rooms(speakers)
 end
 
 def printer(attendees)
-  puts batch_badge_creator(attendees)
-  puts assign_rooms(attendees)
+  counter = 0
+  attendees.each do
+    puts batch_badge_creator(attendees)[counter]
+    counter += 1
+  end
+  counter = 0
+  attendees.each do
+    puts assign_rooms(attendees)[counter]
+  end
 end
