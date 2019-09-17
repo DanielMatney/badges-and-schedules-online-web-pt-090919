@@ -13,6 +13,12 @@ def batch_badge_creator(names)
   badge
 end
 
-def assign_rooms(speakrs)
-  
+def assign_rooms(speakers)
+  counter = 0
+  assignment = []
+  speakers.each do
+    assignment[counter] = "Hello, #{speakers[counter]}! You'll be assigned to room #{counter + 1}!"
+    counter += 1
+  end
+  assignment
 end
