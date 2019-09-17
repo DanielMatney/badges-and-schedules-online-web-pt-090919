@@ -32,5 +32,6 @@ def printer(attendees)
   counter = 0
   attendees.each do
     puts assign_rooms(attendees)[counter]
+    counter += 1
   end
 end
