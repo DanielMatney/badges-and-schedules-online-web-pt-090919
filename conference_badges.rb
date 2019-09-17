@@ -5,8 +5,10 @@ end
 
 def batch_badge_creator(names)
   counter = 0
+  badge = []
   names.each do
-    p "Hello, my name is #{names[counter]}"
+    badge[counter] = "Hello, my name is #{names[counter]}"
     counter += 1
   end
+  badge
 end
